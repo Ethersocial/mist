@@ -12,12 +12,12 @@ const parseJson = require('xml2js').parseString;
 const clientBinaries = require('../clientBinaries.json');
 
 gulp.task('update-nodes', cb => {
-  const clientBinariesGeth = clientBinaries.clients.Geth;
+  const clientBinariesGeth = clientBinaries.clients.Gesn;
   const localGethVersion = clientBinariesGeth.version;
   const newJson = clientBinaries;
-  const geth = newJson.clients.Geth;
+  const gesn = newJson.clients.Gesn;
 
-  // Query latest geth version
+  // Query latest gesn version
   got('https://api.github.com/repos/magnalucus/go-esn/releases', {
     json: true
   })
@@ -28,9 +28,9 @@ gulp.task('update-nodes', cb => {
     .then(tagName => {
       const latestGethVersion = tagName.match(/\d+\.\d+\.\d+/)[0];
 
-      // Compare to current geth version in clientBinaries.json
+      // Compare to current gesn version in clientBinaries.json
       if (cmp(latestGethVersion, localGethVersion)) {
-        geth.version = latestGethVersion;
+        gesn.version = latestGethVersion;
 
         // Query commit hash (first 8 characters)
         got(
@@ -57,26 +57,26 @@ gulp.task('update-nodes', cb => {
                 });
 
                 // For each platform/arch in clientBinaries.json
-                _.keys(geth.platforms).forEach(platform => {
-                  _.keys(geth.platforms[platform]).forEach(arch => {
+                _.keys(gesn.platforms).forEach(platform => {
+                  _.keys(gesn.platforms[platform]).forEach(arch => {
                     // Update URL
-                    let url = geth.platforms[platform][arch].download.url;
+                    let url = gesn.platforms[platform][arch].download.url;
                     url = url.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
                       `${latestGethVersion}-${hash}`
                     );
-                    geth.platforms[platform][arch].download.url = url;
+                    gesn.platforms[platform][arch].download.url = url;
 
                     // Update bin name (path in archive)
-                    let bin = geth.platforms[platform][arch].download.bin;
+                    let bin = gesn.platforms[platform][arch].download.bin;
                     bin = bin.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
                       `${latestGethVersion}-${hash}`
                     );
-                    geth.platforms[platform][arch].download.bin = bin;
+                    gesn.platforms[platform][arch].download.bin = bin;
 
                     // Update expected sanity-command version output
-                    geth.platforms[platform][
+                    gesn.platforms[platform][
                       arch
                     ].commands.sanity.output[1] = String(latestGethVersion);
 
@@ -85,7 +85,7 @@ gulp.task('update-nodes', cb => {
                       if (
                         String(blob.Name) ===
                         _.last(
-                          geth.platforms[platform][arch].download.url.split('/')
+                          gesn.platforms[platform][arch].download.url.split('/')
                         )
                       ) {
                         const sum = new Buffer(
@@ -93,7 +93,7 @@ gulp.task('update-nodes', cb => {
                           'base64'
                         );
 
-                        geth.platforms[platform][
+                        gesn.platforms[platform][
                           arch
                         ].download.md5 = sum.toString('hex');
                       }
