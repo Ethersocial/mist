@@ -195,7 +195,7 @@ ipc.on('backendAction_importWalletFile', (e, path, pw) => {
   const ClientBinaryManager = require('./clientBinaryManager'); // eslint-disable-line global-require
   let error = false;
 
-  const binPath = ClientBinaryManager.getClient('geth').binPath;
+  const binPath = ClientBinaryManager.getClient('gesn').binPath;
   const nodeProcess = spawn(binPath, ['wallet', 'import', path]);
 
   nodeProcess.once('error', () => {
