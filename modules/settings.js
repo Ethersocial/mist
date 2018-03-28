@@ -116,8 +116,8 @@ class Settings {
     return argv.swarmurl;
   }
 
-  get gethPath() {
-    return argv.gethpath;
+  get gesnPath() {
+    return argv.gesnpath;
   }
 
   get ethPath() {
@@ -347,7 +347,7 @@ const argv = require('yargs')
     node: {
       demand: false,
       default: null,
-      describe: 'Node to use: geth, eth',
+      describe: 'Node to use: gesn, eth',
       requiresArg: true,
       nargs: 1,
       type: 'string',
@@ -388,9 +388,9 @@ const argv = require('yargs')
       type: 'string',
       group: 'Mist options:'
     },
-    gethpath: {
+    gesnpath: {
       demand: false,
-      describe: 'Path to Geth executable to use instead of default.',
+      describe: 'Path to Gesn executable to use instead of default.',
       requiresArg: true,
       nargs: 1,
       type: 'string',
@@ -433,7 +433,7 @@ const argv = require('yargs')
     syncmode: {
       demand: false,
       requiresArg: true,
-      describe: 'Geth synchronization mode: [fast|light|full]',
+      describe: 'Gesn synchronization mode: [fast|light|full]',
       nargs: 1,
       type: 'string',
       group: 'Mist options:'
@@ -458,7 +458,7 @@ const argv = require('yargs')
     },
     '': {
       describe:
-        'To pass options to the underlying node (e.g. Geth) use the --node- prefix, e.g. --node-datadir',
+        'To pass options to the underlying node (e.g. Gesn) use the --node- prefix, e.g. --node-datadir',
       group: 'Node options:'
     }
   })
