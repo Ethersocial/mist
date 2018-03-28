@@ -161,15 +161,15 @@ class Settings {
     ipcPath = this.userHomePath;
 
     if (process.platform === 'darwin') {
-      ipcPath += '/Library/Ethereum/geth.ipc';
+      ipcPath += '/Library/ESN/gesn.ipc';
     } else if (
       process.platform === 'freebsd' ||
       process.platform === 'linux' ||
       process.platform === 'sunos'
     ) {
-      ipcPath += '/.ethereum/geth.ipc';
+      ipcPath += '/.esn/gesn.ipc';
     } else if (process.platform === 'win32') {
-      ipcPath = '\\\\.\\pipe\\geth.ipc';
+      ipcPath = '\\\\.\\pipe\\gesn.ipc';
     }
 
     settingsLog.debug(`IPC path: ${ipcPath}`);
