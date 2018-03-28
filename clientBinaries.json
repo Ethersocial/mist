@@ -1,25 +1,25 @@
 {
     "clients": {
-        "Geth": {
-            "version": "1.8.2",
+        "Gesn": {
+            "version": "0.2.2",
             "platforms": {
                 "linux": {
                     "x64": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.8.2-b8b9f7f4.tar.gz",
+                            "url": "http://192.168.0.16/builds/gesn-linux-amd64-0.2.2-806fe5c.tar.gz",
                             "type": "tar",
-                            "md5": "46a76e77fc9ae4dc9f8d1cf50f3b5798",
-                            "bin": "geth-linux-amd64-1.8.2-b8b9f7f4/geth"
+                            "md5": "31ce0d1c40a4795446f37a08cef5b862",
+                            "bin": "gesn-linux-amd64-0.2.2-806fe5c/gesn"
                         },
-                        "bin": "geth",
+                        "bin": "gesn",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gesn",
+                                    "0.2.2"
                                 ]
                             }
                         }
