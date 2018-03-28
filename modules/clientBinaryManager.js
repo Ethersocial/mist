@@ -76,7 +76,6 @@ class Manager extends EventEmitter {
       .then(latestConfig => {
         if (!latestConfig) return;
 
-        log.info(latestConfig);        
         let localConfig;
         let skipedVersion;
         const nodeVersion = latestConfig.clients[nodeType].version;
