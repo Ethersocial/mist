@@ -12,8 +12,8 @@ const parseJson = require('xml2js').parseString;
 const clientBinaries = require('../clientBinaries.json');
 
 gulp.task('update-nodes', cb => {
-  const clientBinariesGeth = clientBinaries.clients.Gesn;
-  const localGethVersion = clientBinariesGeth.version;
+  const clientBinariesGesn = clientBinaries.clients.Gesn;
+  const localGesnVersion = clientBinariesGesn.version;
   const newJson = clientBinaries;
   const gesn = newJson.clients.Gesn;
 
@@ -26,11 +26,11 @@ gulp.task('update-nodes', cb => {
     })
     // Return tag name (e.g. 'v1.5.0')
     .then(tagName => {
-      const latestGethVersion = tagName.match(/\d+\.\d+\.\d+/)[0];
+      const latestGesnVersion = tagName.match(/\d+\.\d+\.\d+/)[0];
 
       // Compare to current geth version in clientBinaries.json
-      if (cmp(latestGethVersion, localGethVersion)) {
-        gesn.version = latestGethVersion;
+      if (cmp(latestGesnVersion, localGesnVersion)) {
+        gesn.version = latestGesnVersion;
 
         // Query commit hash (first 8 characters)
         got(
@@ -45,7 +45,7 @@ gulp.task('update-nodes', cb => {
 
             // Query Azure assets for md5 hashes
             got(
-              'https://gethstore.blob.core.windows.net/builds?restype=container&comp=list',
+              'https://gesnstore.blob.core.windows.net/builds?restype=container&comp=list',
               { xml: true }
             )
               .then(response => {
@@ -63,7 +63,7 @@ gulp.task('update-nodes', cb => {
                     let url = gesn.platforms[platform][arch].download.url;
                     url = url.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
-                      `${latestGethVersion}-${hash}`
+                      `${latestGesnVersion}-${hash}`
                     );
                     gesn.platforms[platform][arch].download.url = url;
 
@@ -71,14 +71,14 @@ gulp.task('update-nodes', cb => {
                     let bin = gesn.platforms[platform][arch].download.bin;
                     bin = bin.replace(
                       /\d+\.\d+\.\d+-[a-z0-9]{8}/,
-                      `${latestGethVersion}-${hash}`
+                      `${latestGesnVersion}-${hash}`
                     );
                     gesn.platforms[platform][arch].download.bin = bin;
 
                     // Update expected sanity-command version output
                     gesn.platforms[platform][
                       arch
-                    ].commands.sanity.output[1] = String(latestGethVersion);
+                    ].commands.sanity.output[1] = String(latestGesnVersion);
 
                     // Update md5 checksum
                     blobs.forEach(blob => {
