@@ -11,7 +11,7 @@ lockSourceIssue: false
 
 # Set custom aliases for targets
 aliases:
-    wallet: ethereum/meteor-dapp-wallet
-    geth: ethereum/go-ethereum
+    wallet: ethersocial/meteor-dapp-wallet
+    geth: ethersocial/go-esn
     parity: paritytech/parity
 
