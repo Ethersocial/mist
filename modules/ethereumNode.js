@@ -14,7 +14,7 @@ const ClientBinaryManager = require('./clientBinaryManager');
 import logger from './utils/logger';
 const ethereumNodeLog = logger.create('EthereumNode');
 
-const DEFAULT_NODE_TYPE = 'geth';
+const DEFAULT_NODE_TYPE = 'gesn';
 const DEFAULT_NETWORK = 'main';
 const DEFAULT_SYNCMODE = 'light';
 
@@ -78,8 +78,8 @@ class EthereumNode extends EventEmitter {
     return this._type === 'eth';
   }
 
-  get isGeth() {
-    return this._type === 'geth';
+  get isGesn() {
+    return this._type === 'gesn';
   }
 
   get isMainNetwork() {
@@ -263,7 +263,7 @@ class EthereumNode extends EventEmitter {
 
   /**
    * Start an ethereum node.
-   * @param  {String} nodeType geth, eth, etc
+   * @param  {String} nodeType gesn, eth, etc
    * @param  {String} network  network id
    * @return {Promise}
    */
@@ -323,9 +323,9 @@ class EthereumNode extends EventEmitter {
         this.lastError = err.tag;
         this.state = STATES.ERROR;
 
-        // if unable to start eth node then write geth to defaults
+        // if unable to start eth node then write gesn to defaults
         if (nodeType === 'eth') {
-          Settings.saveUserData('node', 'geth');
+          Settings.saveUserData('node', 'gesn');
         }
 
         throw err;
@@ -366,7 +366,7 @@ class EthereumNode extends EventEmitter {
    */
   __startProcess(nodeType, network, binPath, _syncMode) {
     let syncMode = _syncMode;
-    if (nodeType === 'geth' && !syncMode) {
+    if (nodeType === 'gesn' && !syncMode) {
       syncMode = DEFAULT_SYNCMODE;
     }
 
@@ -443,7 +443,7 @@ class EthereumNode extends EventEmitter {
         // Starts Main net
         default:
           args =
-            nodeType === 'geth'
+            nodeType === 'gesn'
               ? [
                   '--syncmode',
                   syncMode,
@@ -494,7 +494,7 @@ class EthereumNode extends EventEmitter {
         /*
                     We wait a short while before marking startup as successful
                     because we may want to parse the initial node output for
-                    errors, etc (see geth port-binding error above)
+                    errors, etc (see gesn port-binding error above)
                 */
         setTimeout(() => {
           if (STATES.STARTING === this.state) {
@@ -544,12 +544,12 @@ class EthereumNode extends EventEmitter {
       this.emit('nodeLog', cleanData);
     }
 
-    // check for geth startup errors
+    // check for gesn startup errors
     if (STATES.STARTING === this.state) {
       const dataStr = data.toString().toLowerCase();
-      if (nodeType === 'geth') {
+      if (nodeType === 'gesn') {
         if (dataStr.indexOf('fatal: error') >= 0) {
-          const error = new Error(`Geth error: ${dataStr}`);
+          const error = new Error(`Gesn error: ${dataStr}`);
 
           if (dataStr.indexOf('bind') >= 0) {
             error.tag = UNABLE_TO_BIND_PORT_ERROR;

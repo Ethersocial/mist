@@ -266,7 +266,7 @@ let menuTempl = function(webviews) {
                   userPath += '/.web3/keys';
                 }
 
-                // geth
+                // gesn
               } else {
                 if (process.platform === 'darwin') {
                   userPath += '/Library/Ethereum/keystore';
@@ -491,16 +491,16 @@ let menuTempl = function(webviews) {
     const nodeSubmenu = [];
 
     const ethClient = ClientBinaryManager.getClient('eth');
-    const gethClient = ClientBinaryManager.getClient('geth');
+    const gesnClient = ClientBinaryManager.getClient('gesn');
 
-    if (gethClient) {
+    if (gesnClient) {
       nodeSubmenu.push({
-        label: `Geth ${gethClient.version}`,
-        checked: ethereumNode.isOwnNode && ethereumNode.isGeth,
+        label: `Gesn ${gesnClient.version}`,
+        checked: ethereumNode.isOwnNode && ethereumNode.isGesn,
         enabled: ethereumNode.isOwnNode,
         type: 'checkbox',
         click() {
-          restartNode('geth', null, 'fast', webviews);
+          restartNode('gesn', null, 'fast', webviews);
         }
       });
     }
@@ -574,7 +574,7 @@ let menuTempl = function(webviews) {
   // Light mode switch should appear when not in Solo Mode (dev network)
   if (
     ethereumNode.isOwnNode &&
-    ethereumNode.isGeth &&
+    ethereumNode.isGesn &&
     !ethereumNode.isDevNetwork
   ) {
     devToolsMenu.push({
@@ -583,7 +583,7 @@ let menuTempl = function(webviews) {
       checked: ethereumNode.isLightMode,
       type: 'checkbox',
       click() {
-        restartNode('geth', null, ethereumNode.isLightMode ? 'fast' : 'light');
+        restartNode('gesn', null, ethereumNode.isLightMode ? 'fast' : 'light');
       }
     });
   }

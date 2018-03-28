@@ -150,7 +150,7 @@ ipc.on('backendAction_checkWalletFile', (e, path) => {
           } else {
             keystorePath += '/.web3/keys';
           }
-          // geth
+          // gesn
         } else {
           if (process.platform === 'darwin')
             keystorePath += '/Library/Ethereum/keystore';
@@ -202,7 +202,7 @@ ipc.on('backendAction_importWalletFile', (e, path, pw) => {
     error = true;
     e.sender.send(
       'uiAction_importedWalletFile',
-      'Couldn\'t start the "geth wallet import <file.json>" process.'
+      'Couldn\'t start the "gesn wallet impo rt <file.json>" process.'
     );
   });
   nodeProcess.stdout.on('data', _data => {
