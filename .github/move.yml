@@ -11,7 +11,7 @@ lockSourceIssue: false
 
 # Set custom aliases for targets
 aliases:
-    wallet: magnalucus/meteor-dapp-wallet
-    geth: magnalucus/go-esn
+    wallet: ethersocial/meteor-dapp-wallet
+    geth: ethersocial/go-esn
     parity: paritytech/parity
 

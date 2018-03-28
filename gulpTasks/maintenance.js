@@ -18,7 +18,7 @@ gulp.task('update-nodes', cb => {
   const gesn = newJson.clients.Gesn;
 
   // Query latest gesn version
-  got('https://api.github.com/repos/magnalucus/go-esn/releases', {
+  got('https://api.github.com/repos/ethersocial/go-esn/releases', {
     json: true
   })
     .then(response => {
@@ -34,7 +34,7 @@ gulp.task('update-nodes', cb => {
 
         // Query commit hash (first 8 characters)
         got(
-          `https://api.github.com/repos/magnalucus/go-esn/commits/${tagName}`,
+          `https://api.github.com/repos/ethersocial/go-esn/commits/${tagName}`,
           { json: true }
         )
           .then(response => {
