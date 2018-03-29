@@ -12,11 +12,8 @@ const EventEmitter = require('events').EventEmitter;
 const log = require('./utils/logger').create('ClientBinaryManager');
 
 // should be       'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json'
-// const BINARY_URL =
-//   'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json';
-
 const BINARY_URL =
-  'http://192.168.0.16/builds/clientBinaries.json';
+   'https://raw.githubusercontent.com/ethersocial/mist/master/clientBinaries.json';
 
 const ALLOWED_DOWNLOAD_URLS_REGEX = /^http:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?ethereum\.org\/|gesnthstore\.blob\.core\.windows\.net\/|192\.168\.0\.16\/|bintray\.com\/artifact\/download\/karalabe\/ethereum\/)(?:.+)/; // eslint-disable-line max-len
 

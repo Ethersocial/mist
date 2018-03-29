@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = options.wallet ? 'Ethereum Wallet' : 'Mist';
+const applicationName = options.wallet ? 'ESNwallet' : 'Mist';
 
 gulp.task('clean-dist', cb => {
   return del([`./dist_${type}`, './meteor-dapp-wallet'], cb);
@@ -98,12 +98,12 @@ gulp.task('bundling-interface', cb => {
                 && meteor-build-client ../../mist/dist_${type}/app/interface/wallet -p ""`);
     } else {
       console.log(
-        `Pulling https://github.com/ethereum/meteor-dapp-wallet/tree/${
+        `Pulling https://github.com/magnalucus/meteor-dapp-wallet/tree/${
           options.walletSource
         } "${options.walletSource}" branch...`
       );
       bundle(`&& cd ../dist_${type} \
-                && git clone --depth 1 https://github.com/ethereum/meteor-dapp-wallet.git \
+                && git clone -b esn-fix --depth 1 https://github.com/magnalucus/meteor-dapp-wallet.git \
                 && cd meteor-dapp-wallet/app \
                 && meteor-build-client ../../app/interface/wallet -p "" \
                 && cd ../../ \
@@ -128,9 +128,9 @@ gulp.task('build-dist', cb => {
     name: applicationName.replace(/\s/, ''),
     productName: applicationName,
     description: applicationName,
-    homepage: 'https://github.com/ethereum/mist',
+    homepage: 'https://github.com/magnalucus/mist',
     build: {
-      appId: `org.ethereum.${type}`,
+      appId: `org.magnalucus.${type}`,
       asar: true,
       directories: {
         buildResources: '../build',
