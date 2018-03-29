@@ -153,17 +153,17 @@ ipc.on('backendAction_checkWalletFile', (e, path) => {
           // gesn
         } else {
           if (process.platform === 'darwin')
-            keystorePath += '/Library/Ethereum/keystore';
+            keystorePath += '/Library/ESN/keystore';
 
           if (
             process.platform === 'freebsd' ||
             process.platform === 'linux' ||
             process.platform === 'sunos'
           )
-            keystorePath += '/.ethereum/keystore';
+            keystorePath += '/.esn/keystore';
 
           if (process.platform === 'win32')
-            keystorePath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+            keystorePath = `${Settings.appDataPath}\\ESN\\keystore`;
         }
 
         if (!/^[0-9a-fA-F]{40}$/.test(keyfile.address)) {
