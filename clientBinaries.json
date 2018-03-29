@@ -70,10 +70,10 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-amd64-1.8.2-b8b9f7f4.zip",
+                            "url": "http://192.168.0.16/builds/gesn-windows-amd64-0.2.2-806fe5c.zip",
                             "type": "zip",
-                            "md5": "f498df54aaa42f4269c2d2d06df482fd",
-                            "bin": "gesn-windows-amd64-1.8.2-b8b9f7f4\\gesn.exe"
+                            "md5": "e6db93505ea04d678e1da1f8b132b696",
+                            "bin": "gesn-windows-amd64-0.2.2-806fe5c\\gesn.exe"
                         },
                         "bin": "gesn.exe",
                         "commands": {
@@ -83,7 +83,7 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "1.8.2"
+                                    "0.2.2"
                                 ]
                             }
                         }
