@@ -72,7 +72,7 @@
                         "download": {
                             "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-amd64-0.3.0-6006b0d.zip",
                             "type": "zip",
-                            "md5": "067bdcf080d56f031f22255e0064bd7b",
+                            "md5": "9c360dc6ac763e8209f3c2fddf5ce359",
                             "bin": "gesn-windows-amd64-0.3.0-6006b0d\\gesn.exe"
                         },
                         "bin": "gesn.exe",
@@ -92,7 +92,7 @@
                         "download": {
                             "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-386-0.3.0-6006b0d.zip",
                             "type": "zip",
-                            "md5": "bf78e489f14cbdf45cc41fbfac593546",
+                            "md5": "6bfff4b4ee9ce7d9c68849a5f867bce4",
                             "bin": "gesn-windows-386-0.3.0-6006b0d\\gesn.exe"
                         },
                         "bin": "gesn.exe",
