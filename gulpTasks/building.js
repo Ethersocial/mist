@@ -103,7 +103,7 @@ gulp.task('bundling-interface', cb => {
         } "${options.walletSource}" branch...`
       );
       bundle(`&& cd ../dist_${type} \
-                && git clone -b esn-fix --depth 1 https://github.com/ethersocial/meteor-dapp-wallet.git \
+                && git clone --depth 1 https://github.com/ethersocial/meteor-dapp-wallet.git \
                 && cd meteor-dapp-wallet/app \
                 && meteor-build-client ../../app/interface/wallet -p "" \
                 && cd ../../ \
