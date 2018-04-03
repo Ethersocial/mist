@@ -1,4 +1,4 @@
-* [ ] I've asked for help in the [Mist Gitter](http://gitter.im/ethereum/mist) before filing this issue.
+* [ ] I've asked for help in the [Mist Gitter](http://gitter.im/ethersocial/mist) before filing this issue.
 
 <!-- Please fill in these information below: -->
 
@@ -16,8 +16,8 @@ Check the already existing issues to keep duplicates to a minimum.
 
 You'll find possible solutions for these common issues below on Mist Wiki: https://github.com/ethereum/mist/wiki.
 
-- Ether is not shown in the wallet
-- I send ether to the wallet contract but it doesn't show up
+- ESN is not shown in the wallet
+- I send ESN to the wallet contract but it doesn't show up
 - Mist is synchronized but is stuck during the last part
 - "Your computers time is out of sync!" error
 - Unable to find peers

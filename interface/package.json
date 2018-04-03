@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereum/mist.git"
+    "url": "git+https://github.com/ethersocial/mist.git"
   },
   "keywords": [
-    "ethereum",
+    "ethersocial",
     "mist",
     "web3"
   ],
-  "author": "Fabian Vogelsteller <fabian@ethereum.org>",
+  "author": "Ethersocial <ethersocialcoin@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ethereum/mist/issues"
+    "url": "https://github.com/ethersocial/mist/issues"
   },
-  "homepage": "https://github.com/ethereum/mist#readme",
+  "homepage": "https://github.com/ethersocial/mist#readme",
   "dependencies": {
     "babel-runtime": "^6.18.0"
   }

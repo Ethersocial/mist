@@ -269,7 +269,7 @@ let menuTempl = function(webviews) {
                 // gesn
               } else {
                 if (process.platform === 'darwin') {
-                  userPath += '/Library/ESN/keystore';
+                  userPath += '/Library/Ethersocial/keystore';
                 }
 
                 if (
@@ -277,11 +277,11 @@ let menuTempl = function(webviews) {
                   process.platform === 'linux' ||
                   process.platform === 'sunos'
                 ) {
-                  userPath += '/.esn/keystore';
+                  userPath += '/.ethersocial/keystore';
                 }
 
                 if (process.platform === 'win32') {
-                  userPath = `${Settings.appDataPath}\\ESN\\keystore`;
+                  userPath = `${Settings.appDataPath}\\Ethersocial\\keystore`;
                 }
               }
 
@@ -630,7 +630,7 @@ let menuTempl = function(webviews) {
 
   menu.push({
     label:
-      (global.mining ? '⛏ ' : '') +
+      (global.mining ? '??' : '') +
       i18n.t('mist.applicationMenu.develop.label'),
     submenu: devToolsMenu
   });
@@ -690,19 +690,19 @@ let menuTempl = function(webviews) {
     {
       label: i18n.t('mist.applicationMenu.help.mistWiki'),
       click() {
-        shell.openExternal('https://github.com/magnalucus/mist/wiki');
+        shell.openExternal('https://github.com/ethersocial/mist/wiki');
       }
     },
     {
       label: i18n.t('mist.applicationMenu.help.gitter'),
       click() {
-        shell.openExternal('https://gitter.im/magnalucus/mist');
+        shell.openExternal('https://gitter.im/ethersocial/mist');
       }
     },
     {
       label: i18n.t('mist.applicationMenu.help.reportBug'),
       click() {
-        shell.openExternal('https://github.com/magnalucus/mist/issues');
+        shell.openExternal('https://github.com/ethersocial/mist/issues');
       }
     }
   );

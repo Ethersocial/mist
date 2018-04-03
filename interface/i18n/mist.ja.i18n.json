@@ -5,7 +5,7 @@
                 "label": "__app__",
                 "about": "__app__ について",
                 "checkForUpdates": "アップデートの確認...",
-                "checkForNodeUpdates": "Ethereum ノードのアップデートの確認...",
+                "checkForNodeUpdates": "Ethersocial ノードのアップデートの確認...",
                 "services": "サービス",
                 "hide": "__app__ を隠す",
                 "hideOthers": "ほかを隠す",
@@ -43,7 +43,7 @@
                 "devToolsWebview": "__webview__",
                 "runTests": "テストを実行する",
                 "logFiles": "ログファイルを表示する",
-                "ethereumNode": "Ethereum ノード",
+                "ethereumNode": "Ethersocial ノード",
                 "network": "ネットワーク",
                 "mainNetwork": "メインネットワーク",
                 "startMining": "⛏ マイニングを始める",
@@ -70,7 +70,7 @@
             "nodeStartup": "ノードが始まらないようです。既に動かしていますか？今すぐデータベースを動かしますか？",
             "timeSync": {
                 "title": "コンピューターのクロックが未だ同期されていません.",
-                "description": "Ethereum のネットワークと同期を成功させるためには、時間を同期させるサーバーとあなたのコンピューターを同期させる必要があります。",
+                "description": "Ethersocial のネットワークと同期を成功させるためには、時間を同期させるサーバーとあなたのコンピューターを同期させる必要があります。",
                 "win32": "システム設定を開き、「インターネットの時間設定」を開いてチェックボックスにチェックを入れて下さい。詳しくはこちらのガイドをご覧下さい: http://www.guidingtech.com/3119/windows-clock-sync/",
                 "linux": "時間を同期させるサーバーを使うためには、 \"ntp\" を \"apt-get install ntp\" をコマンドラインから入力してインストールする必要があります。",
                 "darwin": "時間を同期するためには、時間設定を開き \"時間と日付を自動で同期\" にチェックすることが必要です."
@@ -99,7 +99,7 @@
             "mainNetwork": "メインネット",
             "testNetwork": "テストネット",
             "privateNetwork": "プライベートネット",
-            "mainnetExplain": "ここは Ethereum のメインネットです",
+            "mainnetExplain": "ここは Ethersocial のメインネットです",
             "testnetExplain": "ここはテストネットです。絶対に本物の ehter を送らないでください",
             "privatenetExplain": "ここはプライベートっとです。絶対に本物の ether を送らないでください",
             "unknownnetExplain": "どこのネットワークにいるか判定できませんでした"
@@ -116,12 +116,12 @@
             }
         },
         "startScreen": {
-            "runningNodeFound": "起動している Ethereum ノードを見つけました!",
-            "startingNode": "Ethereum ノードを開始しています。",
-            "startedNode": "Ethereum ノードは開始されました...",
-            "nodeConnectionTimeout": "Ethereum ノードをスタート出来ませんでした!<br><small>もし<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
-            "nodeBinaryNotFound": "Ethereum ノードバイナリーが見つかりませんでした。<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
-            "nodeSyncing": "Ethereum ノードは同期中です...",
+            "runningNodeFound": "起動している Ethersocial ノードを見つけました!",
+            "startingNode": "Ethersocial ノードを開始しています。",
+            "startedNode": "Ethersocial ノードは開始されました...",
+            "nodeConnectionTimeout": "Ethersocial ノードをスタート出来ませんでした!<br><small>もし<a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
+            "nodeBinaryNotFound": "Ethersocial ノードバイナリーが見つかりませんでした。<br><small> <a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
+            "nodeSyncing": "Ethersocial ノードは同期中です...",
             "nodeSyncInfo": "ブロックをダウンロードしています。 __displayBlock__ / __highestBlock__.",
             "nodeSyncConnecting": "ピアーを探しています。...",
             "peerSearchTimeout": "ピアーの検索を中止しています",
@@ -132,7 +132,7 @@
             "nodeStopping": "ノードを終了しています...",
             "nodeStopped": "ノードは終了しました",
             "nodeError": "ノード接続エラー :'(",
-            "unableToBindPort": "Ethereum ノードが実行できません。既に他のインスタンスが立ち上がっていませんか？",
+            "unableToBindPort": "Ethersocial ノードが実行できません。既に他のインスタンスが立ち上がっていませんか？",
             "nodeSyncInfoStates": "ブロック __displayBlock__ / __highestBlock__ ダウンロード中, <br> チェーン構造 __displayState__ / __displayKnownStates__ ダウンロード中",
             "nodeSyncFoundPeers": "ピアー __peers__ に接続中...",
             "launchApp": "アプリケーションを起動",
@@ -141,7 +141,7 @@
                 "downloading": "新たなノードをダウンロード中...",
                 "loadConfig": "クライアントの設定を読み込み中...",
                 "filtering": "クライアントのバイナリをフィルタリング中...",
-                "done": "Ethereum ノードは最新です",
+                "done": "Ethersocial ノードは最新です",
                 "error": "ダウンロードしたバイナリでエラーが発生."
             }
         },
@@ -202,7 +202,7 @@
                 "notEnoughGas": "GAS が不足してトランザクションが正常に終了できませんでした.<br>ここをクリックして GAS を増やしてください."
             },
             "onboarding": {
-                "description": "Ethereum は分散型のプラットフォームで、ブロックチェーン上でアプリケーションを作成することが出来ます。価値を転送することが出来、永続的に稼働するセキュリティの高いソフトウェアを作ることが出来ます。",
+                "description": "Ethersocial は分散型のプラットフォームで、ブロックチェーン上でアプリケーションを作成することが出来ます。価値を転送することが出来、永続的に稼働するセキュリティの高いソフトウェアを作ることが出来ます。",
                 "goToTestnet": "テストネットワークを使用する (Rinkeby)",
                 "goToTestnetDescription": "本物の Ether を使わず、サンドボックスのテストネットで、テクノロジーを自由に使う。",
                 "gotoMainnet": "メインネットワークを使用する",
@@ -218,7 +218,7 @@
                 "protectDescription": "新しいアカウントのためにパスワードを作成する. 必ず強いパスワードにしてください!",
                 "accountTitle": "もっとダウンロードする!",
                 "accountTitleTestnet": "マイニングを行う!",
-                "etherDescription": "Ethereum ネットワークは“Ether と呼ばれるトークンに基づき成り立っています. Ethereumネットワークで何かを行うためには必ず必要となります。",
+                "etherDescription": "Ethersocial ネットワークは“Ether と呼ばれるトークンに基づき成り立っています. Ethersocialネットワークで何かを行うためには必ず必要となります。",
                 "loadItDescription": "既にもし Bitcoin を持っているか, もしくは他の暗号通貨を持っている場合には簡単に changelly で変換する事ができます。 <br><br> 私たちは <strong>0.25 から 1 ether の間で</strong>変換することをおすすめします.",
                 "mineItDescription": "<strong>テストネットでは自分自身でマイニングを行うか、 <em>Develop</em> メニューから <em>マイニングを始める</em>を選んでください. </strong> <br> <strong> 絶対にこのアドレスには Ether を送らないでください </strong>",
                 "you": "あなた",

@@ -153,17 +153,17 @@ ipc.on('backendAction_checkWalletFile', (e, path) => {
           // gesn
         } else {
           if (process.platform === 'darwin')
-            keystorePath += '/Library/ESN/keystore';
+            keystorePath += '/Library/Ethersocial/keystore';
 
           if (
             process.platform === 'freebsd' ||
             process.platform === 'linux' ||
             process.platform === 'sunos'
           )
-            keystorePath += '/.esn/keystore';
+            keystorePath += '/.ethersocial/keystore';
 
           if (process.platform === 'win32')
-            keystorePath = `${Settings.appDataPath}\\ESN\\keystore`;
+            keystorePath = `${Settings.appDataPath}\\Ethersocial\\keystore`;
         }
 
         if (!/^[0-9a-fA-F]{40}$/.test(keyfile.address)) {
@@ -202,7 +202,7 @@ ipc.on('backendAction_importWalletFile', (e, path, pw) => {
     error = true;
     e.sender.send(
       'uiAction_importedWalletFile',
-      'Couldn\'t start the "gesn wallet impo rt <file.json>" process.'
+      'Couldn\'t start the "gesn wallet import <file.json>" process.'
     );
   });
   nodeProcess.stdout.on('data', _data => {
