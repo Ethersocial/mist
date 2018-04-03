@@ -1,6 +1,6 @@
-Ethereum Wallet
+ESN Wallet
 
-The Ethereum wallet, which allows you to create simple and multisig wallets to manage your ether.
+The ESN wallet, which allows you to create simple and multisig wallets to manage your ESN.
 
 The wallet contains its own node, but can also use an already running one, if the IPC path of that node is the standard path.
 (See below)
@@ -9,7 +9,7 @@ The wallet contains its own node, but can also use an already running one, if th
 
 When you start the wallet on a testnet (e.g. different `--datadir`) you need to make sure to set the `--ipcpath` back to the original one.
 
-On OSX its `~/Library/Ethereum/geth.ipc` on linux `~/.ethereum/geth.ipc` and on windows it uses a named pipe, which doesn't need to be renamed.
+On OSX its `~/Library/Ethersocial/gesn.ipc` on linux `~/.ethersocial/gesn.ipc` and on windows it uses a named pipe, which doesn't need to be renamed.
 
 Example:
 
@@ -31,30 +31,30 @@ The paths which store your wallets database and node are different:
 
 The wallet (Mist) stores its data at:
 
-* Mac: ~/Library/Application Support/Mist
-* Windows: %APPDATA%\Roaming\Mist
-* Linux: ~/.config/Mist
+* Mac: ~/Library/Application Support/Ethersocial
+* Windows: %APPDATA%\Roaming\Ethersocial
+* Linux: ~/.config/Ethersocial
 
 The nodes data is stored at:
 
-* Mac: ~/Library/Ethereum
-* Windows: %APPDATA%\Roaming\Ethereum
-* Linux: ~/.ethereum
+* Mac: ~/Library/Ethersocial
+* Windows: %APPDATA%\Roaming\Ethersocial
+* Linux: ~/.ethersocial
 
 ## Issues
 
 If you find issues or have suggestion, please report them at  
-https://github.com/ethereum/meteor-dapp-wallet/issues
+https://github.com/ethersocial/meteor-dapp-wallet/issues
 
 ## Repository
 
 The wallet code can be found at  
-https://github.com/ethereum/meteor-dapp-wallet
+https://github.com/ethersocial/meteor-dapp-wallet
 
 And the binary application code, which wraps the wallet app can be found at  
-https://github.com/ethereum/mist/tree/wallet
+https://github.com/ethersocial/mist/tree/wallet
 
 ## Bundling the wallet
 
 To bundle the binaries yourself follow the instructions on the mist#wallet readme  
-https://github.com/ethereum/mist/tree/wallet#deployment
+https://github.com/ethersocial/mist/tree/wallet#deployment
