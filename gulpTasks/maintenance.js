@@ -18,7 +18,7 @@ gulp.task('update-nodes', cb => {
   const gesn = newJson.clients.Gesn;
 
   // Query latest geth version
-  got('https://api.github.com/repos/ethersocial/go-esn/releases', {
+  got('https://api.github.com/repos/ethersocial/go-esn/releases/latest', {
     json: true
   })
     .then(response => {
