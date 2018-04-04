@@ -272,7 +272,7 @@ gulp.task('release-dist', done => {
     }
   });
 
-  console.info('?�∆??Listing release files ***');
+  console.info('*** Listing release files ***');
   console.info(shell.ls('-l', releasePath).map(e => e.name));
 
   done();
