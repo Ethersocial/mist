@@ -29,8 +29,8 @@ mistInit = function() {
 
       Tabs.insert({
         _id: 'browser',
-        url: 'https://ethersocial.org',
-        redirect: 'https://ethersocial.org',
+        url: 'https://ethersocial.network',
+        redirect: 'https://ethersocial.network',
         position: 0
       });
     } else {
@@ -47,8 +47,8 @@ mistInit = function() {
       { _id: 'wallet' },
       {
         $set: {
-          url: 'https://wallet.ethersocial.org',
-          redirect: 'https://wallet.ethersocial.org',
+          url: 'https://ethersocial.network',
+          redirect: 'https://ethersocial.network',
           position: 1,
           permissions: {
             admin: true
