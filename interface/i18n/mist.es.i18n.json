@@ -32,7 +32,8 @@
                 "newAccount": "Nueva cuenta",
                 "backup": "Copia de seguridad",
                 "backupKeyStore": "Cuentas",
-                "backupMist": "Datos de la aplicación"
+                "backupMist": "Datos de la aplicación",
+                "swarmUpload": "Subir a Swarm"
             },
             "develop": {
                 "uploadToSwarm": "Upload a Swarm",
