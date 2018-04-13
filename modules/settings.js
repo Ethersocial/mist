@@ -93,7 +93,7 @@ class Settings {
   }
 
   get appName() {
-    return this.uiMode === 'mist' ? 'Mist' : 'ESNwallet';
+    return this.uiMode === 'mist' ? 'Mist' : 'ESNwallet0.3.0';
   }
 
   get appLicense() {
