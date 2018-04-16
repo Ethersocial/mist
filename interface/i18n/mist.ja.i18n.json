@@ -119,8 +119,8 @@
             "runningNodeFound": "起動している Ethersocial ノードを見つけました!",
             "startingNode": "Ethersocial ノードを開始しています。",
             "startedNode": "Ethersocial ノードは開始されました...",
-            "nodeConnectionTimeout": "Ethersocial ノードをスタート出来ませんでした!<br><small>もし<a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
-            "nodeBinaryNotFound": "Ethersocial ノードバイナリーが見つかりませんでした。<br><small> <a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
+            "nodeConnectionTimeout": "Ethersocial ノードをスタート出来ませんでした!<br><small>もし<a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'>Gesn</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
+            "nodeBinaryNotFound": "Ethersocial ノードバイナリーが見つかりませんでした。<br><small> <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
             "nodeSyncing": "Ethersocial ノードは同期中です...",
             "nodeSyncInfo": "ブロックをダウンロードしています。 __displayBlock__ / __highestBlock__.",
             "nodeSyncConnecting": "ピアーを探しています。...",
@@ -187,7 +187,7 @@
                 "errors": {
                     "connectionTimeout": "ノードにつなげませんでした、バックグラウンドで落ちていますか?",
                     "wrongPassword": "パスワードが間違っています",
-                    "multipleKeysMatchAddress": "複数のキーが一致する場合は、キーストアから重複を削除してください (menu -> accounts -> backup -> accounts)",
+                    "multipleKeysMatchAddress": "複数のキーが一致する場合は、キーストアから重複を削除してください (アカウント -> バックアップを取る -> アカウント)",
                     "insufficientFundsForGas": "GAS を支払うためにメインアカウント(etherbase)に不十分な資金",
                     "sameAccount": "同一アカウントには送信できません"
                 },

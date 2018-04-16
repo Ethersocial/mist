@@ -13,7 +13,7 @@
                 "quit": "Dil nga __app__"
             },
             "file": {
-                "label": "Llogari",
+                "label": "Skedari",
                 "importPresale": "Merr llogari",
                 "newAccount": "Llogari e re",
                 "backup": "Ruaj kopje rezervë",
@@ -126,8 +126,8 @@
             "runningNodeFound": "U gjet nyje Ethereum në punë!",
             "startingNode": "Duke krijuar nyje Ethereum...",
             "startedNode": "Duke nisur aplikacionin...",
-            "nodeConnectionTimeout": "Nuk mund të niset nyje Ethereum!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
-            "nodeBinaryNotFound": "Nuk u gjet nyje binare Ethereum!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
+            "nodeConnectionTimeout": "Nuk mund të niset nyje Ethereum!<br><small>Nëse ju <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'>instaluat Gesn</a>, përdorni këtë komandë ta krijoni: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
+            "nodeBinaryNotFound": "Nuk u gjet nyje binare Ethereum!<br><small> <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
             "nodeStarting": "Nyja Ethereum po niset...",
             "nodeStarted": "Nyja Ethereum u nis",
             "nodeConnected": "Nyja Ethereum u lidh",
@@ -170,7 +170,7 @@
                 "enterPassword": "Fusni fjalëkalimin",
                 "repeatPassword": "Përsërisni fjalëkalimin",
                 "creating": "Duke krijuar llogari...",
-                "backupHint": "Sigurohuni të ruani edhe fjalëkalimin, edhe skedarët çelës!\n\nMund t'i gjeni këta skedarë duke përdorur menunë kryesore -> Llogaritë -> Ruaj kopje rezervë -> Llogaritë. Ruani një kopje të dosjes \"keystore\" në një vend të sigurt!",
+                "backupHint": "Sigurohuni të ruani edhe fjalëkalimin, edhe skedarët çelës!\n\nMund t'i gjeni këta skedarë duke përdorur menunë kryesore -> Skedari -> Ruaj kopje rezervë -> Llogaritë. Ruani një kopje të dosjes \"keystore\" në një vend të sigurt!",
                 "errors": {
                     "passwordMismatch": "Fjalëkalimet nuk përputhen.",
                     "passwordTooShort": "Krijoni një fjalëkalim më të gjatë"
@@ -212,7 +212,7 @@
                 "errors": {
                     "connectionTimeout": "Nuk mund të lidhet me nyjen. Mos ka probleme diku?",
                     "wrongPassword": "Fjalëkalim i gabuar",
-                    "multipleKeysMatchAddress": "Disa  çelësa i përshtaten kësaj adrese; ju lutemi hiqni kopjet e dyfishta nga mbajtësja e çelësave (Menu -> Llogaritë -> Ruaj kopje tjetër -> Llogari)",
+                    "multipleKeysMatchAddress": "Disa  çelësa i përshtaten kësaj adrese; ju lutemi hiqni kopjet e dyfishta nga mbajtësja e çelësave (menunë -> Skedari -> Ruaj kopje rezervë -> Llogari)",
                     "insufficientFundsForGas": "Fonde të pamjaftueshme në adresën kryesore (etherbase) për të paguar për karburant",
                     "sameAccount": "Nuk mund t'i dërgohet vetes"
                 },

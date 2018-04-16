@@ -147,8 +147,8 @@
             "startingNode": "Iniciant node d'Ethereum...",
             "stoppingNode": "Aturant node d'Ethereum...",
             "startedNode": "Iniciant l'aplicació...",
-            "nodeConnectionTimeout": "No s'ha pogut iniciar el node d'Ethereum!<br><small>Si has <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instal·lat Geth</a>, utilitza aquesta comanda per executar-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> O notifica l'error </a></small>",
-            "nodeBinaryNotFound": "No s'ha torbat el binari del node d'Ethereum!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Si us plau inicia'n un manualment primer. </a> </small>",
+            "nodeConnectionTimeout": "No s'ha pogut iniciar el node d'Ethereum!<br><small>Si has <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'>instal·lat Gesn</a>, utilitza aquesta comanda per executar-lo: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'> O notifica l'error </a></small>",
+            "nodeBinaryNotFound": "No s'ha torbat el binari del node d'Ethereum!<br><small> <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'> Si us plau inicia'n un manualment primer. </a> </small>",
             "nodeStarting": "Node d'Ethereum iniciant-se...",
             "nodeStarted": "Node d'Ethereum iniciat",
             "nodeConnected": "Node d'Ethereum connectat",
@@ -190,7 +190,7 @@
                 "enterPassword": "Introdueix una contrasenya",
                 "repeatPassword": "Repeteix la contrasenya",
                 "creating": "Generant el compte...",
-                "backupHint": "Assegura't que fas una còpia de seguretat dels teus fitxer de claus I contrasenya!\n\nPots trobar el teu fitxer de claus mitjançant el menú principal -> Comptes -> Copia de seguretat -> Comptes. Desa una copia de la carpeta del \"fitxer de claus\" on no puguis perdre-la!",
+                "backupHint": "Assegura't que fas una còpia de seguretat dels teus fitxer de claus I contrasenya!\n\nPots trobar el teu fitxer de claus mitjançant el menú principal -> Fitxer -> Copia de seguretat -> Comptes. Desa una copia de la carpeta del \"fitxer de claus\" on no puguis perdre-la!",
                 "errors": {
                     "passwordMismatch": "Les teves contrasenyes no coincideixen.",
                     "passwordTooShort": "Utilitza una contrasenya més llarga"
@@ -232,7 +232,7 @@
                 "errors": {
                     "connectionTimeout": "No s'ha pogut connectar al node, ha fallat la tasca al fons?",
                     "wrongPassword": "Contrasenya errònia",
-                    "multipleKeysMatchAddress": "Multiples claus coincideixen amb l'adreça. Si us plau eliminar els duplicats del fitxer de claus (menú -> comptes -> copia de seguretat -> comptes)",
+                    "multipleKeysMatchAddress": "Multiples claus coincideixen amb l'adreça. Si us plau eliminar els duplicats del fitxer de claus (menú -> Fitxer -> Copia de seguretat -> Comptes)",
                     "insufficientFundsForGas": "Saldo insuficient al compte principal (etherbase) per pagar el gas",
                     "sameAccount": "No es pot enviar a un mateix"
                 },

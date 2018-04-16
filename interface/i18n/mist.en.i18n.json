@@ -150,8 +150,8 @@
             "startingNode": "Starting Ethersocial node...",
             "stoppingNode": "Stopping Ethersocial node...",
             "startedNode": "Starting application...",
-            "nodeConnectionTimeout": "Couldn't start Ethersocial node!<br><small>If you <a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'>installed Geth</a>, use this command to run it: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'> Or report an issue </a></small>",
-            "nodeBinaryNotFound": "No Ethersocial node binary found!<br><small> <a href='https://www.ethersocial.org/cli#geth' class='button' target='_blank'> Please start one manually before. </a> </small>",
+            "nodeConnectionTimeout": "Couldn't start Ethersocial node!<br><small>If you <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'>installed Gesn</a>, use this command to run it: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'> Or report an issue </a></small>",
+            "nodeBinaryNotFound": "No Ethersocial node binary found!<br><small> <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'> Please start one manually before. </a> </small>",
             "nodeStarting": "Ethersocial node starting up...",
             "nodeStarted": "Ethersocial node started",
             "nodeConnected": "Ethersocial node connected",
@@ -194,7 +194,7 @@
                 "enterPassword": "Enter password",
                 "repeatPassword": "Repeat password",
                 "creating": "Generating account...",
-                "backupHint": "Make sure you backup your keyfiles AND password!\n\nYou can find your keyfiles folder using the main menu -> Accounts -> Backup -> Accounts. Keep a copy of the \"keystore\" folder where you can't lose it!",
+                "backupHint": "Make sure you backup your keyfiles AND password!\n\nYou can find your keyfiles folder using the main menu -> File -> Backup -> Accounts. Keep a copy of the \"keystore\" folder where you can't lose it!",
                 "errors": {
                     "passwordMismatch": "Your passwords don't match.",
                     "passwordTooShort": "Make a longer password"
@@ -236,8 +236,8 @@
                 "errors": {
                     "connectionTimeout": "Couldn't connect to the node, did it crash in the background?",
                     "wrongPassword": "Wrong password",
-                    "multipleKeysMatchAddress": "Multiple keys match address.  Please remove duplicates from keystore (menu -> accounts -> backup -> accounts)",
-                    "insufficientFundsForGas": "Insufficient funds in main account to pay for gas",
+                    "multipleKeysMatchAddress": "Multiple keys match address. Please remove duplicates from keystore (menu -> File -> Backup -> Accounts)",
+                    "insufficientFundsForGas": "Insufficient funds in main account (etherbase) to pay for gas",
                     "sameAccount": "Can't send to itself"
                 },
                 "showRawBytecode": "show raw data",

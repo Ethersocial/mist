@@ -27,7 +27,7 @@
                 "default": "Standard"
             },
             "file": {
-                "label": "Konten",
+                "label": "Datei",
                 "importPresale": "Konto importieren",
                 "newAccount": "Neues Konto",
                 "backup": "Sicherung",
@@ -119,8 +119,8 @@
             "runningNodeFound": "Laufender Ethereum Softwareknoten gefunden!",
             "startingNode": "Starte Ethereum Softwareknoten...",
             "startedNode": "Starte Anwendung...",
-            "nodeConnectionTimeout": "Ethereum Softwareknoten konnte nicht gestartet werden!<br><small>Wenn du <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth installiert hast,</a>, verwende bitte diesen Befehl, um Geth zu starten: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'>oder sende einen Fehlerreport</a></small>",
-            "nodeBinaryNotFound": "Keine Programmdatei für den Ethereum Softwareknoten gefunden!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Bitte starte den Ethereum Softwareknoten manuell. </a> </small>",
+            "nodeConnectionTimeout": "Ethereum Softwareknoten konnte nicht gestartet werden!<br><small>Wenn du <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'>Gesn installiert hast,</a>, verwende bitte diesen Befehl, um Gesn zu starten: <br> <code>gesn --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethersocial/mist/issues' class='button' target='_blank'>oder sende einen Fehlerreport</a></small>",
+            "nodeBinaryNotFound": "Keine Programmdatei für den Ethereum Softwareknoten gefunden!<br><small> <a href='https://github.com/ethersocial/go-esn/releases' class='button' target='_blank'> Bitte starte den Ethereum Softwareknoten manuell. </a> </small>",
             "nodeSyncing": "Ethereum Softwareknoten muss synchronisieren, bitte warten...",
             "nodeSyncInfo": "Block __displayBlock__ von __highestBlock__ wird heruntergeladen.",
             "nodeSyncConnecting": "Suche nach Peers...",
@@ -151,6 +151,7 @@
                 "enterPassword": "Passwort eingeben",
                 "repeatPassword": "Passwort wiederholen",
                 "creating": "Konto wird angelegt...",
+                "backupHint": "Bitte stelle sicher dass du von allen Schlüsseldateien Sicherungen erstellst. Unabhängig davon solltest du dich AUCH vergewissern dass du deine Passwörter nicht vergisst bzw. dass du diese sicher in einem Passwort-Manager abgespeichert hast!\n\nDie verschlüsselten Wallet-Dateien findest du im Hauptmenü -> Datei -> Sicherung -> Konten. Bewahre Kopien des \"keystore\" Ordners an einem sicheren Ort auf!",
                 "errors": {
                     "passwordMismatch": "Die Passwörter stimmen nicht überein.",
                     "passwordTooShort": "Wähle ein längeres Passwort..."
@@ -186,7 +187,7 @@
                 "errors": {
                     "connectionTimeout": "Eine Verbindung mit dem Softwareknoten war nicht möglich, eventuell ist der Softwareknoten im Hintergrund abgestürzt?",
                     "wrongPassword": "Falsches Passwort",
-                    "multipleKeysMatchAddress": "Mehrere Konten stimmen mit der Adresse überein, bitte entferne Duplikate aus dem keystore Verzeichnis (Menü -> Konten -> Sicherung -> Konten)",
+                    "multipleKeysMatchAddress": "Mehrere Konten stimmen mit der Adresse überein, bitte entferne Duplikate aus dem keystore Verzeichnis (Menü -> Datei -> Sicherung -> Konten)",
                     "insufficientFundsForGas": "Zu wenig Mittel im Hauptkonto (etherbase) um für Gas zu bezahlen",
                     "sameAccount": "Kann nicht zum gleichen Konto schicken."
                 },
