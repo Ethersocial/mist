@@ -103,7 +103,7 @@ exports.mocha = (_module, options) => {
 
       this.geth = yield startGeth();
 
-      const appFileName = options.app === 'wallet' ? 'ESNwallet0.3.0' : 'Mist';
+      const appFileName = options.app === 'wallet' ? 'ESNwallet0.3.1' : 'Mist';
       const platformArch = `${process.platform}-${process.arch}`;
       console.info(`${appFileName} :: ${platformArch}`);
 
