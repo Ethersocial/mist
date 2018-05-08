@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = options.wallet ? 'ESNwallet0.3.1' : 'Mist';
+const applicationName = options.wallet ? 'ESNwallet' : 'Mist';
 
 gulp.task('clean-dist', cb => {
   return del([`./dist_${type}`, './meteor-dapp-wallet'], cb);
