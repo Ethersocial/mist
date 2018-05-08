@@ -1,15 +1,15 @@
 {
     "clients": {
         "Gesn": {
-            "version": "0.3.0",
+            "version": "0.2.4",
             "platforms": {
                 "linux": {
                     "x64": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-linux-amd64-0.3.0-4a90a4b.tar.gz",
+                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-linux-amd64-0.2.4-8c71de8.tar.gz",
                             "type": "tar",
-                            "md5": "a786f8c62f036213ee8330f57e182b1f",
-                            "bin": "gesn-linux-amd64-0.3.0-4a90a4b/gesn"
+                            "md5": "ac4ece485751529f85a699d3897831c0",
+                            "bin": "gesn-linux-amd64-0.2.4-8c71de8/gesn"
                         },
                         "bin": "gesn",
                         "commands": {
@@ -19,17 +19,17 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "0.3.0"
+                                    "0.2.4"
                                 ]
                             }
                         }
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-linux-386-0.3.0-4a90a4b.tar.gz",
+                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-linux-386-0.2.4-8c71de8.tar.gz",
                             "type": "tar",
-                            "md5": "78549f3a80024b500c3821b3a66d2c41",
-                            "bin": "gesn-linux-386-0.3.0-4a90a4b/gesn"
+                            "md5": "5c9f258562fc8896b28c20088d0b889a",
+                            "bin": "gesn-linux-386-0.2.4-8c71de8/gesn"
                         },
                         "bin": "gesn",
                         "commands": {
@@ -39,7 +39,7 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "0.3.0"
+                                    "0.2.4"
                                 ]
                             }
                         }
@@ -48,10 +48,10 @@
                 "mac": {
                     "x64": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-darwin-amd64-0.3.0-4a90a4b.tar.gz",
+                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-darwin-amd64-0.2.4-8c71de8.tar.gz",
                             "type": "tar",
-                            "md5": "cbd0c0a77dcb7bee8588a83cb7332af9",
-                            "bin": "gesn-darwin-amd64-0.3.0-4a90a4b/gesn"
+                            "md5": "90db5ea43d04bd42777d43d3a7c583eb",
+                            "bin": "gesn-darwin-amd64-0.2.4-8c71de8/gesn"
                         },
                         "bin": "gesn",
                         "commands": {
@@ -61,7 +61,7 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "0.3.0"
+                                    "0.2.4"
                                 ]
                             }
                         }
@@ -70,10 +70,10 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-amd64-0.3.0-4a90a4b.zip",
+                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-amd64-0.2.4-8c71de8.zip",
                             "type": "zip",
-                            "md5": "423badfe32be2892482a6a3b7c3aad29",
-                            "bin": "gesn-windows-amd64-0.3.0-4a90a4b\\gesn.exe"
+                            "md5": "79ae20fcc5b821ff5f37c46a2ea16afd",
+                            "bin": "gesn-windows-amd64-0.2.4-8c71de8\\gesn.exe"
                         },
                         "bin": "gesn.exe",
                         "commands": {
@@ -83,17 +83,17 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "0.3.0"
+                                    "0.2.4"
                                 ]
                             }
                         }
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-386-0.3.0-4a90a4b.zip",
+                            "url": "https://gesnstore.blob.core.windows.net/builds/gesn-windows-386-0.2.4-8c71de8.zip",
                             "type": "zip",
-                            "md5": "a0697b94275f6cecd2979e70b56a2f9e",
-                            "bin": "gesn-windows-386-0.3.0-4a90a4b\\gesn.exe"
+                            "md5": "42d79e5e2b6a667e2fa84b1526c74aff",
+                            "bin": "gesn-windows-386-0.2.4-8c71de8\\gesn.exe"
                         },
                         "bin": "gesn.exe",
                         "commands": {
@@ -103,7 +103,7 @@
                                 ],
                                 "output": [
                                     "Gesn",
-                                    "0.3.0"
+                                    "0.2.4"
                                 ]
                             }
                         }
