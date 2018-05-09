@@ -610,7 +610,7 @@ let menuTempl = function(webviews) {
 
   menu.push({
     label:
-      (global.mining ? '??' : '') +
+      (global.mining ? '⛏ ' : '') +
       i18n.t('mist.applicationMenu.develop.label'),
     submenu: devToolsMenu
   });
