@@ -73,7 +73,7 @@
             },
             "nodeChecksumMismatch": {
                 "title": "다운로드 한 노드에서 체크섬 불일치!",
-                "description": "__algorithm__: __hash__\n\nPlease install the __type__ node version __version__ manually."
+                "description": "__algorithm__: __hash__\n\n수동으로 __type__ 노드 버전 __version__을 설치해주세요."
             },
             "legacyChain": {
                 "title": "레거시 체인 감지",
@@ -164,7 +164,7 @@
                     "sendTransaction": "트랜잭션 보내기"
                 },
                 "errors": {
-                    "connectionTimeout": "노드에 연결할 수 없었습니다. 백그라운드에서 작동중지되었습니까?",
+                    "connectionTimeout": "노드에 연결할 수 없었습니다. 백그라운드에서 작동 중지되었습니까?",
                     "wrongPassword": "암호가 일치하지 않습니다",
                     "multipleKeysMatchAddress": "여러 개의 키가 주소와 일치합니다. 키 스토어에서 중복 된 것을 제거하십시오. (메뉴 -> 계정 -> 백업 -> 계정)",
                     "insufficientFundsForGas": "주 계정(etherbase)에 가스를 지불할 금액이 충분하지 않습니다.",
@@ -185,7 +185,7 @@
                 "goToTestnet": "테스트 네트워크 사용하기 (Rinkeby)",
                 "goToTestnetDescription": "샌드박스 테스트넷에서 실제 ESN을 사용하지 않고 자유롭게 테스트하기.",
                 "gotoMainnet": "메인 네트워크 사용하기",
-                "gotoMainnetDescription": "계약을 만들고 사용하기 위해서는 약간의 ESN이 필요합니다. 약간의 이더를 가질 수 있도록 도와줄 수 있습니다.",
+                "gotoMainnetDescription": "계약을 만들고 사용하기 위해서는 약간의 ESN이 필요합니다. 약간의 ESN을 가질 수 있도록 도와줄 수 있습니다.",
                 "doYouHaveAWalletFile": "지갑 파일을 가지고 있나요?",
                 "walletFileDescription": "<p>만일 2014년 이더리움 프리세일에 참여했다면, <code>ethereum_wallet_backup.json</code> 이란 파일을 가지고 있을 겁니다. 세일이 끝나고 다운로드를 받았거나 이메일로 받았을 겁니다.</p>",
                 "dropFilesHere": "프리세일 파일을 가져다 놓기",
