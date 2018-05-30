@@ -241,7 +241,7 @@ Helpers.detectNetwork = function(hash) {
       network.name = 'Main';
       break;
 
-    case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
+    case '0xabcca8259adf43270310766fd545b8f58d65d6c5001f2f646e0fbc229aced20e':
       console.log('Network is Testnet');
       network.type = 'testnet';
       network.name = 'Testnet';
