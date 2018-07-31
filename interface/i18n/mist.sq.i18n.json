@@ -62,8 +62,8 @@
             },
             "help": {
                 "label": "Ndihmë",
-                "mistWiki": "Zgjidhje problemesh dhe ndihmë",
-                "gitter": "Kanali Mist në Gitter",
+                "discord": "Discord",
+                "reddit": "Reddit",
                 "reportBug": "Raportoni një problem në Github"
             }
         },
