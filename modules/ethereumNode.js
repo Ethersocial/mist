@@ -16,7 +16,7 @@ const ethereumNodeLog = logger.create('EthereumNode');
 
 const DEFAULT_NODE_TYPE = 'gesn';
 const DEFAULT_NETWORK = 'main';
-const DEFAULT_SYNCMODE = 'fast';
+const DEFAULT_SYNCMODE = 'full';
 
 const UNABLE_TO_BIND_PORT_ERROR = 'unableToBindPort';
 const NODE_START_WAIT_MS = 3000;
@@ -99,7 +99,7 @@ class EthereumNode extends EventEmitter {
   }
 
   get isLightMode() {
-    return this._syncMode === 'fast';
+    return this._syncMode === 'full';
   }
 
   get state() {

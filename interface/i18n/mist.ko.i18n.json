@@ -58,6 +58,8 @@
             },
             "help": {
                 "label": "도움말",
+                "discord": "디스코드",
+                "reddit": "레딧",
                 "reportBug": "깃허브에 이슈 보고"
             }
         },
