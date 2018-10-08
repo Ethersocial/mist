@@ -4,7 +4,7 @@ const eth = require('ethereumjs-util');
 
 /**
  * Process method: eth_getTransactionReceipt
- * Due to a gesn's light client v1 bug, it does not return
+ * Due to a geth's light client v1 bug, it does not return
  * contractAddress value on the receipts. Let's fix that.
  */
 

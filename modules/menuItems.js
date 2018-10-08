@@ -266,7 +266,7 @@ let menuTempl = function(webviews) {
                   userPath += '/.web3/keys';
                 }
 
-                // gesn
+                // geth
               } else {
                 if (process.platform === 'darwin') {
                   userPath += '/Library/Ethersocial/keystore';

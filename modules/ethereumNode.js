@@ -323,7 +323,7 @@ class EthereumNode extends EventEmitter {
         this.lastError = err.tag;
         this.state = STATES.ERROR;
 
-        // if unable to start eth node then write gesn to defaults
+        // if unable to start eth node then write geth to defaults
         if (nodeType === 'eth') {
           Settings.saveUserData('node', 'gesn');
         }
@@ -494,7 +494,7 @@ class EthereumNode extends EventEmitter {
         /*
                     We wait a short while before marking startup as successful
                     because we may want to parse the initial node output for
-                    errors, etc (see gesn port-binding error above)
+                    errors, etc (see geth port-binding error above)
                 */
         setTimeout(() => {
           if (STATES.STARTING === this.state) {
@@ -544,7 +544,7 @@ class EthereumNode extends EventEmitter {
       this.emit('nodeLog', cleanData);
     }
 
-    // check for gesn startup errors
+    // check for geth startup errors
     if (STATES.STARTING === this.state) {
       const dataStr = data.toString().toLowerCase();
       if (nodeType === 'gesn') {

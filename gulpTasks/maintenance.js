@@ -17,7 +17,7 @@ gulp.task('update-nodes', cb => {
   const newJson = clientBinaries;
   const gesn = newJson.clients.Gesn;
 
-  // Query latest gesn version
+  // Query latest geth version
   got('https://api.github.com/repos/ethersocial/go-esn/releases/latest', {
     json: true
   })
@@ -28,7 +28,7 @@ gulp.task('update-nodes', cb => {
     .then(tagName => {
       const latestGesnVersion = tagName.match(/\d+\.\d+\.\d+/)[0];
 
-      // Compare to current gesn version in clientBinaries.json
+      // Compare to current geth version in clientBinaries.json
       if (cmp(latestGesnVersion, localGesnVersion)) {
         gesn.version = latestGesnVersion;
 
