@@ -447,6 +447,8 @@ class EthereumNode extends EventEmitter {
               ? [
                   '--syncmode',
                   syncMode,
+                  '--gcmode',
+                  'archive',
                   '--cache',
                   process.arch === 'x64' ? '1024' : '512'
                 ]

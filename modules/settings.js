@@ -362,6 +362,15 @@ const argv = require('yargs')
       type: 'string',
       group: 'Mist options:'
     },
+    gcmode: {
+      demand: false,
+      default: 'archive',
+      describe: '--gcmode archive',
+      requiresArg: true,
+      nargs: 1,
+      type: 'string',
+      group: 'Mist options:'
+    },
     rpc: {
       demand: false,
       describe:
